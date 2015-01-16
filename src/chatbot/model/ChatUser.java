@@ -1,5 +1,9 @@
 package chatbot.model;
-
+/**
+ * Checks the various properties of the user of the chatbot application.
+ * What the person's name is, how old they are what their favorite movie is,
+ * and whether or not they are pierced or have a tattoo.
+ */
 public class ChatUser
 {
 	private String name;
@@ -7,7 +11,10 @@ public class ChatUser
 	private String favoriteMovie;
 	private boolean isPierced;
 	private boolean isTattooed;
-	
+	/**
+	 * The getters and setters of values specified above. This allows the program to read
+	 * the information and return it to application to be displayed.
+	 */
 	public ChatUser()
 	{
 		

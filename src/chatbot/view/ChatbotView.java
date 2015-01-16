@@ -3,7 +3,9 @@ package chatbot.view;
 import javax.swing.JOptionPane;
 
 import chatbot.controller.ChatbotAppController;
-
+/**
+ * This allows ChatbotView to access the ChatbotAppController
+ */
 public class ChatbotView
 {
 	private ChatbotAppController baseController;
@@ -16,7 +18,7 @@ public class ChatbotView
 	/**
 	 * Displays the supplied String parameter to the user via popup and returns the users response to the controller.
 	 * @param input The supplied text to be displayed.
-	 * @return  
+	 * @return output; the computer's response to the controller.
 	 */
 	
 	public void displayChatbotsations(String input)
@@ -37,7 +39,11 @@ public class ChatbotView
 	{
 		JOptionPane.showMessageDialog(null, input);
 	}
-
+	/**
+	 * Displays conversations between Chatbot and the user.
+	 * @param message what the user enters into the text field
+	 * @return null or no value
+	 */
 	public String displayChatbotConversations(String message)
 	{
 		// TODO Auto-generated method stub

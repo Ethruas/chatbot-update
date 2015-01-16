@@ -3,9 +3,14 @@ package chatbot.view;
 import javax.swing.JFrame;
 
 import chatbot.controller.ChatbotAppController;
-
+/**
+ * ChatbotFrame is allowed to use everything in JFrame
+ */
 public class ChatbotFrame extends JFrame
 {
+	/**
+	 * Chatbot's frame and how to start it up is established.
+	 */
 	private ChatbotPanel basePanel;
 	
 	public ChatbotFrame(ChatbotAppController baseController)
@@ -13,7 +18,9 @@ public class ChatbotFrame extends JFrame
 		basePanel = new ChatbotPanel(baseController);
 		setupFrame();
 	}
-	
+	/**
+	 * The size and the properties of Chatbot's frame.
+	 */
 	private void setupFrame()
 	{
 		this.setContentPane(basePanel);
